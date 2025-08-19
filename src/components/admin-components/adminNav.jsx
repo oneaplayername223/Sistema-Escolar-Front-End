@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import CellNav from "./cellNav";
 
 import { FaCheckCircle } from 'react-icons/fa';
 import { FaHouseChimney } from "react-icons/fa6";
@@ -19,7 +19,10 @@ import { IoSchool } from "react-icons/io5";
 import './adminNav.css'
 function AdminNav (){
     return(
-
+<>
+ <nav className="adminCellNav">
+        <CellNav />
+    </nav>
 <div className="adminNav-container">
 <h1><IoSchool className="adminNav-icon" size={50} color="#ffffffff" /><br />Dashboard  Admin </h1>
     <nav className="adminNav">
@@ -38,8 +41,12 @@ function AdminNav (){
             <span className="fastLink">Preferencias</span>
             <li> <IoIosSettings className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/acerca-de" className="adminNav-link">Configuracion</Link></li>
         </ul>
+        
     </nav>
+  
 </div>
+ 
+</>
     )
 }
 
