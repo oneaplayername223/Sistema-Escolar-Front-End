@@ -1,0 +1,120 @@
+
+body{
+    background-color: #f1f5f9;
+}
+
+.header-title-text{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: 30px;
+    text-align: start;
+    padding: 0%;
+    height: 10%;
+    width: 70%;
+    padding-left: 20%;
+    padding-bottom: 120px;
+    padding-top: 02%;
+    padding-bottom: 05%;
+    color: #141c33;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.stats{
+    background-color: white;
+    box-sizing: inline-block;
+    width: 200px;
+    height: 150px;
+    margin-left: 06%;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: #141c33;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600px;
+    font-size: 20px;
+
+    border-radius: 10px;
+
+    
+}
+.stats-container{
+        margin-left: 12%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: #141c33;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600px;
+    font-size: 20px;
+    
+}
+
+.stats-number{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+.stats-text{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+.searchBar{
+    box-sizing: content-box;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 03%;
+    margin-top: 25px;
+    width: 100%;
+
+}
+
+.fast-links{
+    text-align: start;
+    margin-left: 20%;
+    cursor: default;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600px;
+    font-size: 20px;
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-title-text{
+ display: none;   
+    }
+    .stats-container{
+        text-align: center;
+        margin: auto;
+        
+    }
+    .stats{
+        margin: 20px;
+    }
+    .navBar{
+        margin: 0%;
+        width: 90%;
+    }
+    .fast-links{
+    margin: 03%;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: auto;
+    width: auto;
+    }    
+}
