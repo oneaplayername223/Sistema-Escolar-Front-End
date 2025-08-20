@@ -1,8 +1,5 @@
-import './Nav.css'
+import './styles/Nav.css'
 import { Link } from 'react-router-dom'
-/* import all the icons in Free Solid, Free Regular, and Brands styles */
-
-//Icons
 
 
 function Nav() {

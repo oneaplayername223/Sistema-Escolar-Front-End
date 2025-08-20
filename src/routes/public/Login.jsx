@@ -8,14 +8,14 @@ const navigate = useNavigate();
 
 const onSubmit = (data) => {    
     console.log(data);
-    if(data.email == 'admin@gmail.com' && data.password == 'admin@gmail.com'){
+    if(data.email === 'admin@gmail.com' && data.password === 'admin@gmail.com'){
         return navigate('/index');
     }else{
         console.log('error');
     }
   };
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
   return (
     <div className='login-container'>
         <h1>Iniciar Sesion</h1>

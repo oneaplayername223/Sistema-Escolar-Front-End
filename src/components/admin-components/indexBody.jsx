@@ -1,5 +1,5 @@
 import React from 'react'
-import './indexBody.css'
+import './styles/indexBody.css'
 import { Link } from 'react-router-dom'
 import { FaUser } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -22,7 +22,7 @@ function IndexBody() {
               <p className='item-description'>Crea usuario a los profesores.
 
 </p>
-              <Link to="/contacto" className='item-button'>
+              <Link to="/agregar/profesor" className='item-button'>
               <IoMdAdd className="adminNav-icon" size={20} color="#ffffffff"  />Agregar</Link>      
            </div>
             <div className='item-box'>
@@ -31,7 +31,7 @@ function IndexBody() {
               <p className='item-description'>Visualiza la informacion de los profesores activos.
 
 </p>
-              <Link to="/contacto" className='item-button'>
+              <Link to="/ver/profesores" className='item-button'>
               <IoMdPersonAdd className="adminNav-icon" size={20} color="#ffffffff"  />Ver</Link>      
            </div>
            <div className='item-box'>
@@ -39,9 +39,11 @@ function IndexBody() {
             <span className='item-title'>Agregar Estudiantes</span>
             <p className='item-description'>
               Formulario para registrar nuevos estudiantes en el sistema.</p>
-           <Link to="/contacto" className='item-button'>
+           <Link to="/agregar/estudiante" className='item-button'>
               <IoMdAdd className="adminNav-icon" size={20} color="#ffffffff"  />Agregar</Link>      
             </div>
+
+            
             <div className='item-box'>
             <IoIosSettings className="adminNav-icon" size={30} color="#141c33" />
             <span className='item-title'>Configuracion</span>

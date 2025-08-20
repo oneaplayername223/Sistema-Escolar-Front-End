@@ -14,7 +14,7 @@ import { IoSchool } from "react-icons/io5";
 
 
 
-import './adminNav.css'
+import './styles/adminNav.css'
 function AdminNav (){
     return(
 <>
