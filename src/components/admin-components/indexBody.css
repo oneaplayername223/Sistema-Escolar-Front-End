@@ -1,5 +1,5 @@
 .body-container{
-    margin-left: 12%;
+    margin-left: 14%;
     margin-top: 3%;
 }
 
@@ -13,8 +13,9 @@
     text-align: start;
     width: 330px;
     margin: 0px;
-    border-radius: 12px;
-    margin-left: 53px;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-bottom: 03%;
     height: 235px;
     
     padding: 12px;

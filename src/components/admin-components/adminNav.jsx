@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CellNav from "./cellNav";
 
-import { FaCheckCircle } from 'react-icons/fa';
 import { FaHouseChimney } from "react-icons/fa6";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { IoIosAdd } from "react-icons/io";
@@ -20,9 +18,7 @@ import './adminNav.css'
 function AdminNav (){
     return(
 <>
- <nav className="adminCellNav">
-        <CellNav />
-    </nav>
+
 <div className="adminNav-container">
 <h1><IoSchool className="adminNav-icon" size={50} color="#ffffffff" /><br />Dashboard  Admin </h1>
     <nav className="adminNav">

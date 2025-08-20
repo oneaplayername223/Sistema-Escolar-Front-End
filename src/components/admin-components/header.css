@@ -97,6 +97,9 @@ body{
 @media screen and (max-width: 600px) {
     .header-title-text{
         text-align: start;
+            padding-left: 05%;
+            margin-top: 05%;
+
  
     }
     .stats-container{
@@ -127,11 +130,10 @@ body{
         font-size: 25px;
     }
     .navBar{
-
+position: sticky;
         margin: 0;
         padding: 0;
       
-        width: 95%;
     }
     .fast-links{
     margin: 03%;
