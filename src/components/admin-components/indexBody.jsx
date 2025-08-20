@@ -32,7 +32,7 @@ function IndexBody() {
       icon: <GiTeacher size={30} color="#141c33" />,
       link: "/ver/profesores",
       buttonText: "Ver",
-      buttonIcon: <IoMdPersonAdd size={20} className='adminNav-icon' color="#ffffffff" />
+      buttonIcon: <FaEye size={20} className='adminNav-icon' color="#ffffffff" />
     },
     {
       title: "Agregar Estudiantes",
@@ -43,18 +43,19 @@ function IndexBody() {
       buttonIcon: <IoMdAdd size={20} className='adminNav-icon' color="#ffffffff" />
     },
     {
-      title: "Configuracion",
-      description: "Accede a la configuracion de tu cuenta",
-      icon: <IoIosSettings size={30} className='adminNav-icon' color="#141c33" />,
-      link: "/contacto",
+      title: "Ver Estudiantes",
+      description: "Visualiza todos los estudiantes presentes en el sistema.",
+      icon: <FaUser size={30} color="#141c33" />,
+      link: "/ver/estudiantes",
       buttonText: "Ver",
       buttonIcon: <FaEye size={20} className='adminNav-icon' color="#ffffffff" />
     },
+   
     {
       title: "Ver Usuarios",
       description: "Visualiza la informacion de los usuarios registrados",
       icon: <FaUser size={30} color="#141c33" />,
-      link: "/contacto",
+      link: "/ver/estudiantes",
       buttonText: "Ver",
       buttonIcon: <FaEye size={20} className='adminNav-icon' color="#ffffffff" />
     },
@@ -62,7 +63,7 @@ function IndexBody() {
       title: "Cerrar Sesion",
       description: "Sal de tu cuenta actual",
       icon: <IoLogOut size={30} className='adminNav-icon' color="#141c33" />,
-      link: "/contacto",
+      link: "/login",
       buttonText: "Salir",
       buttonIcon: <IoLogOut size={20} className='adminNav-icon' color="#ffffffff" />
     }

@@ -10,7 +10,7 @@ import IndexAdmin from './routes/admin/Index';
 import AgregarProfesores from './routes/admin/AgregarProfesores';
 import VerProfesores from './routes/admin/VerProfesores';
 import AgregarEstudiantes from './routes/admin/AgregarEstudiantes';
-
+import VerEstudiantes from './routes/admin/verEstudiantes';
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
      <Route path='/agregar/profesor' element={<AgregarProfesores />} />
      <Route path='/ver/profesores' element={<VerProfesores />} />
      <Route path='/agregar/estudiante' element={<AgregarEstudiantes />} />
+     <Route path='/ver/estudiantes' element={<VerEstudiantes />} />
      <Route path='*' element={<div>
 <h1>Error 404:</h1><br />
 <p>La pagina que estas buscando no existe</p>
