@@ -96,19 +96,42 @@ body{
 
 @media screen and (max-width: 600px) {
     .header-title-text{
- display: none;   
+        text-align: start;
+ 
     }
     .stats-container{
+        box-sizing: content-box;
+        
+        
         text-align: center;
         margin: auto;
+        padding: auto;
+        
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        display: flex;
         
     }
     .stats{
-        margin: 20px;
+        margin: 8px;
+        font-size: 05px;
+        width: 140px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .stats-number{
+        font-size: 25px;
     }
     .navBar{
-        margin: 0%;
-        width: 90%;
+
+        margin: 0;
+        padding: 0;
+      
+        width: 95%;
     }
     .fast-links{
     margin: 03%;

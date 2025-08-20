@@ -6,6 +6,10 @@ import { SiGoogleclassroom } from "react-icons/si";
 import { FaUser } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 
+import { GiTeacher } from "react-icons/gi";
+import { PiStudentBold } from "react-icons/pi";
+import { IoIosSettings } from "react-icons/io";
+
 function Header() {
   return (
     <div className="header-container">
@@ -41,13 +45,17 @@ function Header() {
         <input type="search" placeholder="🔍Buscar Funcionalidad" className='searchBar' />
       </nav>
       <div className='fast-links'>
-      <Link to="/acerca-de" className='fastLink'>Profesores</Link>
-      <Link to="/acerca-de" className='fastLink'>Estudiantes</Link>
+      <Link to="/acerca-de" className='fastLink'>            
+      <GiTeacher className="adminNav-icon" size={15} color="#2f456f" />
+Profesores</Link>
+      <Link to="/acerca-de" className='fastLink'>
+            <PiStudentBold className="adminNav-icon" size={15} color="#2f456f" />
+      Estudiantes</Link>
       
-      <Link to="/acerca-de" className='fastLink'>Ver</Link>
-            <Link to="/acerca-de" className='fastLink'>Configuracion</Link>
+            <Link to="/acerca-de" className='fastLink'>      
+            <IoIosSettings className="adminNav-icon" size={15} color="#2f456f" />
+Configuracion</Link>
 
-      <Link to="/acerca-de" className='fastLink'>ajustes</Link>
 
       </div>
       
