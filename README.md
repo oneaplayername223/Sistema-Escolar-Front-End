@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1>🎓 Sistema de Gestión Escolar — Frontend</h1>
+<p><a href="#school-management-system--frontend">📘 English version below</a></p>
 
-In the project directory, you can run:
+<p>Este es un ejemplo de frontend para un sistema de gestión escolar, desarrollado con <strong>React.js</strong> ⚛️.</p>
+<p>Utiliza librerías como <strong>react-hook-form</strong> 📝 para formularios, <strong>react-router-dom</strong> 🚦 para navegación, <strong>react-icons</strong> 🎨 para iconografía, y <strong>CSS</strong> para estilos personalizados.</p>
 
-### `npm start`
+<h2>🚀 Tecnologías utilizadas</h2>
+<ul>
+  <li>⚛️ React.js</li>
+  <li>📝 react-hook-form</li>
+  <li>🚦 react-router-dom</li>
+  <li>🎨 react-icons</li>
+  <li>🎨 CSS</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>📦 Instalación</h2>
+<pre><code># Clona el repositorio
+git clone https://github.com/oneaplayername223/Sistema-Escolar-Front-End.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Entra al directorio
+cd Sistema-Escolar-Front-End
 
-### `npm test`
+# Instala las dependencias
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Inicia el servidor de desarrollo
+npm run dev
+</code></pre>
 
-### `npm run build`
+<h2>🗂️ Estructura del proyecto</h2>
+<pre><code>src/
+├── components/     # Componentes reutilizables
+├── routes/         # Definición de rutas (no protegidas)
+└── index.jsx        # Punto de entrada
+</code></pre>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>📌 Estado actual</h2>
+<p>🔧 Proyecto en desarrollo. Este repositorio sirve como ejemplo de estructura y uso de librerías clave en React.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2>🧠 Autor</h2>
+<p><strong>Elian J. Marquez</strong><br>
+Desarrollador Fullstack en consolidación, especializado en Node.js, Express y React.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<hr>
 
-### `npm run eject`
+<h1 id="school-management-system--frontend">🎓 School Management System — Frontend</h1>
+<p><a href="#sistema-de-gestion-escolar--frontend">📗 Versión en español arriba</a></p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>This is a sample frontend for a school management system, built with <strong>React.js</strong> ⚛️.</p>
+<p>It uses libraries like <strong>react-hook-form</strong> 📝 for forms, <strong>react-router-dom</strong> 🚦 for navigation, <strong>react-icons</strong> 🎨 for icons, and <strong>CSS</strong> for custom styling.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>🚀 Technologies Used</h2>
+<ul>
+  <li>⚛️ React.js</li>
+  <li>📝 react-hook-form</li>
+  <li>🚦 react-router-dom</li>
+  <li>🎨 react-icons</li>
+  <li>🎨 CSS</li>
+</ul>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h2>📦 Installation</h2>
+<pre><code># Clone the repository
+git clone https://github.com/oneaplayername223/Sistema-Escolar-Front-End.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Enter the directory
+cd Sistema-Escolar-Front-End
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start the development server
+npm run dev
+</code></pre>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>🗂️ Project Structure</h2>
+<pre><code>src/
+├── components/     # Reusable components
+├── routes/         # Route definitions (not protected)
+└── index.jsx        # Entry point
+</code></pre>
 
-### Code Splitting
+<h2>📌 Current Status</h2>
+<p>🔧 Work in progress. This repository serves as a sample structure and usage of key React libraries.</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>🧠 Author</h2>
+<p><strong>Elian J. Marquez</strong><br>
+Junior Fullstack Developer focused on Node.js, Express, and React.</p>
