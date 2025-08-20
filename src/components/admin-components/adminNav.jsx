@@ -27,15 +27,17 @@ function AdminNav (){
 <Link to="/index" className="adminNav-link">Inicio</Link></li>
 
             <span className="fastLink">Profesores</span>
-            <li> <FaChalkboardTeacher  className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/contacto" className="adminNav-link">Ver Profesores</Link></li>
+                        <li> <IoPersonAdd className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/agregar/profesor" className="adminNav-link">Agregar Profesores</Link></li>
+
+            <li> <FaChalkboardTeacher  className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/ver/profesores" className="adminNav-link">Ver Profesores</Link></li>
             
-            <li> <IoPersonAdd className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/acerca-de" className="adminNav-link">Agregar Profesores</Link></li>
             <span className="fastLink">Estudiantes</span>
-            <li><PiStudentBold className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/login" className="adminNav-link">Ver Estudiantes</Link></li>
-            <li><IoIosAdd className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/acerca-de" className="adminNav-link">Agregar Estudiantes</Link></li>
+                        <li><IoIosAdd className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/agregar/estudiante" className="adminNav-link">Agregar Estudiantes</Link></li>
+
+            <li><PiStudentBold className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/ver/estudiantes" className="adminNav-link">Ver Estudiantes</Link></li>
 
             <span className="fastLink">Preferencias</span>
-            <li> <IoIosSettings className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/acerca-de" className="adminNav-link">Configuracion</Link></li>
+            <li> <IoIosSettings className="adminNav-icon" size={24} color="#ffffffff" /><Link to="/login" className="adminNav-link">Cerrar Sesion</Link></li>
         </ul>
         
     </nav>

@@ -10,71 +10,108 @@ import { IoMdPersonAdd } from "react-icons/io";
 import { IoLogOut } from "react-icons/io5";
 import { IoPersonAdd } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
+import { PiStudentBold } from "react-icons/pi";
 
-
+import { useState } from 'react';
 
 function IndexBody() {
+  const [search, setSearch] = useState('');
+
+  const items = [
+    {
+      title: "Agregar Profesores",
+      description: "Crea usuario a los profesores.",
+      icon: <IoPersonAdd size={30} color="#141c33" />,
+      link: "/agregar/profesor",
+      buttonText: "Agregar",
+      buttonIcon: <IoMdAdd size={20} className='adminNav-icon' color="#ffffffff" />
+    },
+    {
+      title: "Ver Profesores",
+      description: "Visualiza la informacion de los profesores activos.",
+      icon: <GiTeacher size={30} color="#141c33" />,
+      link: "/ver/profesores",
+      buttonText: "Ver",
+      buttonIcon: <IoMdPersonAdd size={20} className='adminNav-icon' color="#ffffffff" />
+    },
+    {
+      title: "Agregar Estudiantes",
+      description: "Formulario para registrar nuevos estudiantes en el sistema.",
+      icon: <IoPersonAdd size={30}  />,
+      link: "/agregar/estudiante",
+      buttonText: "Agregar",
+      buttonIcon: <IoMdAdd size={20} className='adminNav-icon' color="#ffffffff" />
+    },
+    {
+      title: "Configuracion",
+      description: "Accede a la configuracion de tu cuenta",
+      icon: <IoIosSettings size={30} className='adminNav-icon' color="#141c33" />,
+      link: "/contacto",
+      buttonText: "Ver",
+      buttonIcon: <FaEye size={20} className='adminNav-icon' color="#ffffffff" />
+    },
+    {
+      title: "Ver Usuarios",
+      description: "Visualiza la informacion de los usuarios registrados",
+      icon: <FaUser size={30} color="#141c33" />,
+      link: "/contacto",
+      buttonText: "Ver",
+      buttonIcon: <FaEye size={20} className='adminNav-icon' color="#ffffffff" />
+    },
+    {
+      title: "Cerrar Sesion",
+      description: "Sal de tu cuenta actual",
+      icon: <IoLogOut size={30} className='adminNav-icon' color="#141c33" />,
+      link: "/contacto",
+      buttonText: "Salir",
+      buttonIcon: <IoLogOut size={20} className='adminNav-icon' color="#ffffffff" />
+    }
+  ];
+
+  const filteredItems = items.filter(item =>
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.description.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <div className='body-container'>
-            <div className='item-box'>
-              <IoPersonAdd  className="adminNav-icon" size={30} color="#141c33"  />
-              <span className='item-title'>Agregar Profesores</span>
-              <p className='item-description'>Crea usuario a los profesores.
-
-</p>
-              <Link to="/agregar/profesor" className='item-button'>
-              <IoMdAdd className="adminNav-icon" size={20} color="#ffffffff"  />Agregar</Link>      
-           </div>
-            <div className='item-box'>
-              <GiTeacher className="adminNav-icon" size={30} color="#141c33"  />
-              <span className='item-title'>Ver Profesores</span>
-              <p className='item-description'>Visualiza la informacion de los profesores activos.
-
-</p>
-              <Link to="/ver/profesores" className='item-button'>
-              <IoMdPersonAdd className="adminNav-icon" size={20} color="#ffffffff"  />Ver</Link>      
-           </div>
-           <div className='item-box'>
-            <IoPersonAdd className="adminNav-icon" size={30} color="#141c33" />
-            <span className='item-title'>Agregar Estudiantes</span>
-            <p className='item-description'>
-              Formulario para registrar nuevos estudiantes en el sistema.</p>
-           <Link to="/agregar/estudiante" className='item-button'>
-              <IoMdAdd className="adminNav-icon" size={20} color="#ffffffff"  />Agregar</Link>      
-            </div>
-
-            
-            <div className='item-box'>
-            <IoIosSettings className="adminNav-icon" size={30} color="#141c33" />
-            <span className='item-title'>Configuracion</span>
-            <p className='item-description'>
-                accede a la configuracion de tu cuenta
-            </p>
-            <Link to="/contacto" className='item-button'>
-            <FaEye className="adminNav-icon" size={20} color="#ffffffff" />Ver</Link>
+    <>
+      <div className='header-container'>
+        <nav className='navBar'>
+          <input
+            type="search"
+            placeholder="🔍 Buscar funcionalidad"
+            className='searchBar'
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </nav>
+        <div className='fast-links'>
+          <Link to="/acerca-de" className='fastLink'>
+            <GiTeacher className="adminNav-icon" size={15} color="#2f456f" />Profesores
+          </Link>
+          <Link to="/acerca-de" className='fastLink'>
+            <PiStudentBold className="adminNav-icon" size={15} color="#2f456f" />Estudiantes
+          </Link>
+          <Link to="/acerca-de" className='fastLink'>
+            <IoIosSettings className="adminNav-icon" size={15} color="#2f456f" />Configuración
+          </Link>
         </div>
+      </div>
 
-  <div className='item-box'>
-            <FaUser className="adminNav-icon" size={30} color="#141c33" />
-            <span className='item-title'>Ver Usuarios</span>
-            <p className='item-description'>
-                Visualiza la informacion de los usuarios registrados
-            </p>
-            <Link to="/contacto" className='item-button'>
-            <FaEye className="adminNav-icon" size={20} color="#ffffffff" />Ver</Link>
-        </div>
-          <div className='item-box'>
-            <IoLogOut className="adminNav-icon" size={30} color="#141c33" />
-            <span className='item-title'>Cerrar Sesion</span>
-            <p className='item-description'>
-              Sal de tu cuenta actual
-            </p>
-            <Link to="/contacto" className='item-button'>
-            <IoLogOut className="adminNav-icon" size={20} color="#ffffffff" />Salir</Link>
-        
-        </div>
-    </div>
-  )
+      <div className='body-container'>
+        {filteredItems.map((item, index) => (
+          <div className='item-box' key={index}>
+            {item.icon}
+            <span className='item-title'>{item.title}</span>
+            <p className='item-description'>{item.description}</p>
+            <Link to={item.link} className='item-button'>
+              {item.buttonIcon}{item.buttonText}
+            </Link>
+          </div>
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default IndexBody
+export default IndexBody;

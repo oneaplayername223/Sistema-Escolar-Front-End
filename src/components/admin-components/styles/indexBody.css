@@ -3,6 +3,9 @@
     margin-top: 3%;
 }
 
+
+
+
 .item-box{
     box-sizing: content-box;
     background-color: #ffffff;
@@ -33,6 +36,10 @@
     font-weight: 600px;
     font-size: 20px;
     height: 20px;
+    margin-left: 02%;
+    position: relative;
+    bottom: 02%;
+    
 }
 
 .item-description{
@@ -49,18 +56,19 @@
 
 .item-button{
     background-color: #141c33;
-    border-radius: 10px;
+    border-radius: 08px;
     border: none;
     font-style: italic;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 13px;
     text-align: center;
     text-decoration: none;
     font-weight: normal;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    font-size: 18px;
+    margin: 4px 5px;
+    
+    
 }
 
 
