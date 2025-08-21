@@ -1,12 +1,14 @@
 import "./styles/Header.css"
 function Header() {
     return (
-        <div className="header-container">
+        <div className="header-container-user">
 <section className="header">
     <h1 className="header-title">Centro Educativo de la Republica Dominicana 🇩🇴
 </h1>
 
-<p className="header-subtitle">Nuestro anhelo es propagar el Reino de Dios, esto nos impulsa a entregarnos a la educación de la infancia y juventud, conscientes de su importancia para el bien del hombre, la Iglesia, la familia y la sociedad según nuestros fundadores: ( Madre Carmen González y Padre Bernabé de Astorga)Como seguidores de Jesucristo, creemos en la Iglesia y nos adherimos plenamente a su magisterio.
+<p className="header-subtitle">
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ex, eligendi excepturi, laudantium saepe tenetur nisi illo et eius ad sunt inventore id voluptates corporis eveniet in, molestias unde magni.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente est officiis, animi unde vel, quo quaerat doloremque enim impedit dicta natus delectus voluptatibus ratione, et eaque itaque neque praesentium.
 </p>
 </section>
 <section className="header-image">
