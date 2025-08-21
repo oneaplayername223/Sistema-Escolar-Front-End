@@ -3,6 +3,41 @@ div{
 
 }
 
+.header-title{
+    animation-name: float;
+    animation-duration: 3s;
+}
+
+
+
+.header-container{
+animation-name: apear;
+animation-duration: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+    
+}
+
+@keyframes apear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 .header{
         box-sizing: content-box;
             width: 700px;
@@ -23,7 +58,8 @@ div{
 .header-subtitle{
     background-color: #141c33;
     color:#ffffffbf;
-    
+    animation-name: apear;
+animation-duration: 3s;
     border-radius: 15px;
 
     
@@ -47,6 +83,8 @@ div{
 }
 
 .image{
+        animation-name: float;
+    animation-duration: 1s;
     margin-right: 30px;
     padding: 0px;
     text-align: end;
